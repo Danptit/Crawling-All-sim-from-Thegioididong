@@ -1,13 +1,19 @@
 var Crawler = require("crawler");
 Database = require('arangojs').Database;
 db = new Database('http://10.11.11.182');
-db.useBasicAuth('training', 'deeprank');
-db.useDatabase('training');
+db.useBasicAuth('username', 'password');
+db.useDatabase('DBname');
 collection = db.collection('Vinaphone');
 
 
-         returnJSON(480)
-  
+for(let i = 1; i <= 500; i ++){
+
+     setTimeout(() => {
+         returnJSON(i)
+     }, 2000);
+    //returnJSON(i);
+}
+
 function returnJSON (index){
     var c = new Crawler({
         rateLimit: 2000,

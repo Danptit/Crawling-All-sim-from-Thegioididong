@@ -12,6 +12,7 @@
   "dependencies": {
     "arango": "^1.3.4",
     "cheerio": "^1.0.0-rc.2",
+    "crawler": "^1.1.4",
     "express": "latest",
     "request": "latest",
     "request-promise": "^4.2.2",
